@@ -5,3 +5,12 @@ def converts_temp(value, unit):
         return (value * 9/5) + 32 #dengan validasi: elif value == "F".. return value.. else: print("Unit harus 'C' atau 'F'")
     else:
         print("Unit nya 'C' Masseh")
+        
+print("===== Konversi =====")
+input_suhu = float(input("Masukkan Nilai Suhu: "))
+unit = input("Masukkan satuan suhu ('C' Untuk Celcius): ")
+konversi = converts_temp(input_suhu, unit)
+if unit() == 'C':
+    print (f"{input_suhu}°C = {konversi:.2f}°F")
+else:
+    print("Satuan tidak dikenal.")
